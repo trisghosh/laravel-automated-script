@@ -23,4 +23,6 @@ if [ "$authr" = "Y" ]; then
 		php artisan migrate
 	fi;
 fi;
+mv server.php index.php
+cp public/.htaccess .htaccess
 
