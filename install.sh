@@ -39,4 +39,9 @@ if [ "$authr" = "Y" ]; then
 fi;
 mv server.php index.php
 cp public/.htaccess .htaccess
-
+echo "Laravel Installation Successfully done "
+echo "Do you want to Install the debugger :"
+read dbug
+if [ "$dbug" = "Y" ]; then
+	composer require barryvdh/laravel-debugbar --dev
+fi;
